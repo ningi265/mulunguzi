@@ -1,0 +1,48 @@
+ npm run dev
+
+> mulunguzi-english-dept@0.1.0 dev
+> next dev
+
+   ▲ Next.js 15.1.2
+   - Local:        http://localhost:3000
+   - Network:      http://192.168.19.221:3000
+
+ ✓ Starting...
+ ✓ Ready in 7.7s
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 14.1s (579 modules)
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ GET /_next/static/webpack/0936021c90e18cea.webpack.hot-update.json 404 in 15686ms
+ ○ Compiling / ...
+ ⨯ ./src/app/components/ui/button.tsx:3:1
+Module not found: Can't resolve 'class-variance-authority'
+  1 | import * as React from "react"
+  2 | import { Slot } from "@radix-ui/react-slot"
+> 3 | import { cva, type VariantProps } from "class-variance-authority"
+    | ^
+  4 |
+  5 | import { cn } from "../../lib/utils"
+  6 |
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./src/app/components/Header.tsx
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename 'C:\Users\brian\Desktop\english-department\mulunguzi-english-dept\.next\cache\webpack\client-development-fallback\1.pack.gz_' -> 'C:\Users\brian\Desktop\english-department\mulunguzi-english-dept\.next\cache\webpack\client-development-fallback\1.pack.gz'
+ ⨯ ./src/app/components/ui/button.tsx:3:1
+Module not found: Can't resolve 'class-variance-authority'
+  1 | import * as React from "react"
+  2 | import { Slot } from "@radix-ui/react-slot"
+> 3 | import { cva, type VariantProps } from "class-variance-authority"
+    | ^
+  4 |
+  5 | import { cn } from "../../lib/utils"
+  6 |
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./src/app/components/Header.tsx
+ GET /_next/static/webpack/0936021c90e18cea.webpack.hot-update.json 500 in 15952ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ GET / 500 in 50ms
